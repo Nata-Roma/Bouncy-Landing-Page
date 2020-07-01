@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'BigJohn', sans-serif;
+    src: url(../fonts/BigJohn.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap');
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
+
+*,
+hover,
+active {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro {
+    width: inherit;
+    height: 737px;
+    background: url(../images/intro_img.jpg) center no-repeat;
+    position: relative;
+    margin-bottom: 8rem;
+    .intro__title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 3.5rem;
+        line-height: 7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        text-align: center;
+    }
+    .intro__text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        text-align: center;
+    }
+    .intro__arrow {
+        position: absolute;
+        bottom: 7.7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 36px;
+        height: 36px;
+        background-color: #19bd9a;
+        border-radius: 50%;
+        cursor: pointer;
+        .pe-7s-angle-down {
+            position: relative;
+            font-size: 30px;
+            color: #fff;
+            left: 3px;
+            top: 3px;
+        }
+    }
+}
+
+.header {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+    padding-bottom: 20rem;
+    align-items: center;
+    .header__logo {
+        font-family: 'BigJohn', sans-serif;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 900;
+    }
+    .header__nav {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        &--item {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #ffffff;
+            border: 1.0px solid transparent;
+            border-radius: 1.65rem;
+            padding: 0.5rem 1.8rem;
+            text-decoration: none;
+            &:hover {
+                border-color: #fff;
+            }
+        }
+    }
+    
+}
+
+.intro__footer {
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .intro__container--text {
+        width: 55%;
+        margin-top: 3rem;
+        
+        .intro__footer--title {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            line-height: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #333b46;
+            margin-bottom: 4rem;
+        }
+        .intro__footer--text {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: #81868e;
+            margin-bottom: 3rem;
+        }
+        .intro__footer--btn {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fff;
+            font-size: 1.6rem;
+            padding: 0.8rem 3rem;
+            font-weight: 400;
+            color: #333b46;
+            border: 1.0px solid #333b46;
+            border-radius: 3rem;
+        }
+    }
+}
+
