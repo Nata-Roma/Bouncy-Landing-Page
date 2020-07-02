@@ -163,10 +163,10 @@ body {
   margin-bottom: 3rem;
 }
 
-.intro__footer .intro__container--text .intro__footer--btn {
+.btn {
   display: block;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 1.6rem;
   padding: 0.8rem 3rem;
   font-weight: 400;
@@ -228,14 +228,8 @@ body {
   font-size: 3rem;
   font-weight: 400;
   color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  padding-top: 12px;
+  padding-left: 11px;
 }
 
 .details .details__icons .details__icons--item :hover {
@@ -243,13 +237,227 @@ body {
   height: 53px;
   border-radius: 50%;
   background-color: #19bd9a;
+  cursor: pointer;
 }
 
-.details .details__icons .details__icons--item :hover span {
+.details .details__idea {
+  max-width: 96.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 9rem;
+}
+
+.details .details__idea .details__idea--title {
+  width: 46.6%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #81868e;
+  padding-right: 13rem;
+}
+
+.details .details__idea .details__idea--title .idea--item-title {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  color: #464646;
+}
+
+.details .details__idea .span-green {
+  font-weight: 700;
+  color: #19bd9a;
+}
+
+.details .details__idea .span-black {
+  font-weight: 700;
+  color: #636971;
+}
+
+.details .details__idea .details__idea--item {
+  padding-top: 6rem;
+  width: 53.4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #81868e;
+}
+
+.projects {
+  padding-top: 8rem;
+  margin: 0 auto;
+}
+
+.projects .projects__img {
+  max-width: 1366px;
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -2px;
+}
+
+.projects .projects__img .projects__img--target {
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-right: -5px;
+}
+
+.projects .projects__img .projects__img--target .img-cover {
+  position: absolute;
+  width: 701px;
+  height: 319px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color .1s;
+  -o-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+.projects .projects__img .projects__img--target:hover .img-cover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.projects .projects__img .projects__img--vintage,
+.projects .projects__img .projects__img--brandings {
+  position: relative;
+}
+
+.projects .projects__img .projects__img--vintage .img-cover,
+.projects .projects__img .projects__img--brandings .img-cover {
+  position: absolute;
+  width: 336px;
+  height: 319px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  -webkit-transition: background-color .1s;
+  -o-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+.projects .projects__img .projects__img--vintage .img-cover .img-cover__text,
+.projects .projects__img .projects__img--brandings .img-cover .img-cover__text {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  padding-top: 15rem;
+  text-align: center;
+  opacity: 0;
+}
+
+.projects .projects__img .projects__img--vintage:hover .img-cover,
+.projects .projects__img .projects__img--brandings:hover .img-cover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.projects .projects__img .projects__img--vintage:hover .img-cover .img-cover__text,
+.projects .projects__img .projects__img--brandings:hover .img-cover .img-cover__text {
+  opacity: 1;
+}
+
+.project__footer {
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+  background-image: url(../images/project_footer.png);
+}
+
+.project__footer--container {
+  max-width: 1030px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.project__footer--container .project__footer-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+}
+
+.project__footer--container .project__footer-text span {
+  font-weight: 700;
+}
+
+.project__footer--container .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.services {
+  padding-top: 8rem;
+  background-color: #eee;
+}
+
+.services .services-container {
+  max-width: 1030px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 5.5rem;
+}
+
+.services .services-container .services__icons {
+  width: 53px;
+}
+
+.services .services-container .services__icons--item {
+  width: 100%;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #81868e;
+  margin-bottom: 1.7rem;
+}
+
+.services .services-container .services__icons--item:hover {
+  width: 100%;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #19bd9a;
+}
+
+.services .services-container .services__icons--item span {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 1.1rem;
+  padding-left: 1.3rem;
+}
+
+.services .services-container .services__text {
+  width: 39%;
+}
+
+.services .services-container .services__text .services__text--title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  color: #464646;
 }
