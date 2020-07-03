@@ -857,6 +857,7 @@ body {
     }
     .price__item {
         width: 23.4rem;
+        position: relative;
         &--name {
             width: inherit;
             height: 6.7rem;
@@ -893,16 +894,15 @@ body {
         &:hover {
             .price__item--hover {
                 display: block;
-                z-index: 2;
-                position: relative;
-                top: -30.3rem;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
     }
     .price__item--hover {
         width: 23.4rem;
         display: none;
-        z-index: -1;
         .price__item--price {
             font-family: 'Open Sans', sans-serif;
             font-size: 1.4rem;
@@ -930,3 +930,242 @@ body {
         }
     }
 }
+
+.email {
+    background: url(../images/bg_email.jpg) no-repeat;
+    padding-top: 7.5rem;
+    .box__text {
+        text-align: center;
+        .box__text--title {
+            color: #ffffff;
+        }
+    }
+    .form-submit {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+        .form-container {
+            display: flex;
+            max-width: 520px;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            .form-email {
+                width: 358px;
+                height: 41px;
+                border: 1.0px solid #81868e;
+                padding-left: 2.3rem;
+                background-color: rgba(0, 0, 0, 0);
+
+                &::placeholder {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    letter-spacing: 0.01rem;
+                    color: #cfd3d4;
+                }
+            }
+            .form-btn {
+                width: 151px;
+                background-color: #19bd9a;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 400;
+                letter-spacing: 0.01rem;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.contacts {
+    background-color: #eee;
+    padding-top: 7.5rem;
+    .contacts-container {
+        max-width: 940px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-top: 5.5rem;
+        padding-bottom: 10rem;
+        .contacts__item {
+            width: 287px;
+            background-color: #fff;
+            padding-bottom: 3rem;
+            .contacts__item--img_1 {
+                background: url(../images/contact_email.jpg) no-repeat;
+                height: 14.5rem;
+                .pe-7s-mail {
+                    font-size: 5rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    padding: 5rem 12rem;
+                }
+            }
+            .contacts__item--img_2 {
+                background: url(../images/contact_address.jpg) no-repeat;
+                height: 14.5rem;
+                .pe-7s-map-marker {
+                    font-size: 5rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    padding: 5rem 12rem;
+                }
+            }
+            .contacts__item--img_3 {
+                background: url(../images/contact_phone.jpg) no-repeat;
+                height: 14.5rem;
+                .pe-7s-call {
+                    font-size: 5rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    padding: 5rem 12rem;
+                }
+            }
+            .contacts__item--title {
+                margin-top: 3rem;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.04rem;
+                color: #464646;
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+            .contacts__item--data {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                color: #81868e;
+                text-align: center;
+            }
+
+        }
+    }
+}
+.sumbits {
+    padding-top: 8rem;
+    padding-bottom: 12.5rem;
+
+    .input-container {
+        width: 940px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-bottom: 2.9rem;
+        input {
+            display: inline-block;
+            width: 287px;
+            height: 41px;
+            border: 1.0px solid #d8dce0;
+
+            &::placeholder {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #a9a9a9;
+                padding-left: 2rem;
+            }
+        }
+    }
+    textarea {
+        width: 939px;
+        height: 190px;
+        border: 1.0px solid #d8dce0;
+        margin: 0 auto;
+        display: block;
+        resize: none;
+        margin-bottom: 3rem;
+    }
+    .submits-btn {
+        width: 939px;
+        height: 53px;
+        background-color: #19bd9a;
+        margin: 0 auto;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #ffffff;
+        display: block;
+    }
+}
+
+.map {
+    height: 429px;
+    position: relative;
+    &:hover {       
+        .map-hover {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.map-hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 1366px;
+    height: 429px;
+    display: none;
+    .map-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        top: 50%;
+    }
+
+    .map-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #19bd9a;
+        position: relative;
+        top: 50%;
+        right: -800px;
+        transform: translate(0, -100%);
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding-left: 1.5px;
+            padding-top: 2px;
+        }
+    }
+}
+
+footer {
+    background-color: #eee;
+    padding-top: 7.5rem;
+    padding-bottom: 9rem;
+    .footer-title {
+        font-family: 'BigJohn', sans-serif;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #323a45;
+        font-weight: 900;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .footer-copyright {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #81868e;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+
