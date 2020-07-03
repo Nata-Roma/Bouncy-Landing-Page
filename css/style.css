@@ -821,6 +821,7 @@ body {
 
 .team .slick-menu img {
   display: inline-block;
+  margin-right: 10px;
 }
 
 .talk {
@@ -908,12 +909,13 @@ body {
 
 .testimonials .testimonials-container .slick-menu img {
   display: inline-block;
+  margin-right: 10px;
 }
 
 .news {
   width: 100%;
-  background-image: url(../images/bg_news_1.png);
-  padding: 7rem 0 0 9rem;
+  background: url(../images/bg_news_1.png) no-repeat;
+  padding: 7rem 0 9.5rem 9rem;
 }
 
 .news .news__title {
@@ -927,6 +929,7 @@ body {
 }
 
 .news .news__text {
+  max-width: 460px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -934,4 +937,184 @@ body {
   letter-spacing: 0.05em;
   color: #b2b3b3;
   margin-bottom: 9rem;
+}
+
+.news .news-container {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.news .news-container .news__item-text {
+  width: 53%;
+}
+
+.news .news-container .news__item-text .item-text__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  color: #e1e4e9;
+  padding-bottom: .5rem;
+}
+
+.news .news-container .news__item-text .item-text__author {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #81868e;
+  padding-bottom: 1.5rem;
+}
+
+.news .news-container .news__item-text .item-text__author .span-green {
+  color: #19bd9a;
+}
+
+.news .news-container .news__item-text .item-text__info {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #464646;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5.5rem;
+}
+
+.news .news-container .news__item-text .item-text__text {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #81868e;
+}
+
+.news .news-container .slick-menu {
+  margin-top: 4rem;
+  width: 10px;
+}
+
+.news .news-container .slick-menu img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news .read-more {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #b2b3b3;
+  margin-left: 8.8rem;
+}
+
+.price {
+  background-color: #eee;
+  padding-top: 7.5rem;
+}
+
+.price .price-container {
+  max-width: 831px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 5.5rem;
+  padding-bottom: 10rem;
+}
+
+.price .price__item {
+  width: 23.4rem;
+}
+
+.price .price__item--name {
+  width: inherit;
+  height: 6.7rem;
+  background-color: #19bd9a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.price .price__item--cont {
+  width: inherit;
+  height: 23.6rem;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  background-color: #fff;
+}
+
+.price .price__item--cont .price__item--price {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4.3rem;
+  font-weight: 900;
+  color: #1fbba6;
+  padding-top: 6rem;
+}
+
+.price .price__item--cont .price__item--period {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #81868e;
+}
+
+.price .price__item:hover .price__item--hover {
+  display: block;
+  z-index: 2;
+  position: relative;
+  top: -30.3rem;
+}
+
+.price .price__item--hover {
+  width: 23.4rem;
+  display: none;
+  z-index: -1;
+}
+
+.price .price__item--hover .price__item--price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #81868e;
+  padding: 3rem 0 0 3.3rem;
+  width: inherit;
+  height: 23.6rem;
+  background-color: #fff;
+}
+
+.price .price__item--hover .price__item--btn {
+  display: block;
+  width: inherit;
+  height: 6.7rem;
+  background-color: #19bd9a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: none;
 }
